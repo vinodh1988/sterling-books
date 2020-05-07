@@ -1,0 +1,32 @@
+
+  <div class="card w-50 card-style-one" style="width: 75% !important;">
+    <div class="card-body">
+      <table>
+        <tr>
+          <th><img src="http://localhost:8078/Bookshop/assets/man.jpg" class="img-round-corner"></th>
+          <th>
+            <h5 class="card-title">{{review.name}}</h5>
+          </th>
+        </tr>
+      </table>
+      <table>
+        <tr>
+          <th>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span></th>
+          <th>
+            <h5 class="card-title">S{{review.book}}</h5>
+          </th>
+        </tr>
+      </table>
+
+      <p class="card-text">{{review.message}}</p>
+      <p class="card-text">Reviewed on {{review.reviewdate}} </p>
+
+
+      
+    </div>
+  </div>

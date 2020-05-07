@@ -1,0 +1,40 @@
+.product-container{
+   height: 450px;
+   overflow: hidden;
+   position: relative;
+}
+.product-scroll{
+    height: 350px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    white-space: nowrap;
+    position: relative;
+   
+
+}
+
+#corner-arrow-left{
+   position: absolute;
+   left: 0px;
+   top: 45%;
+   z-index: 2;
+   height: 30px;
+   width: 30px;
+   cursor: pointer;
+}
+
+#corner-arrow-right{
+    position: absolute;
+    right: 0px;
+    top: 45%;
+    z-index: 2;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+ }
+
+ #corner-arrow-left img, #corner-arrow-right img{
+    height: 100%;
+    width: 100%;
+ }
+

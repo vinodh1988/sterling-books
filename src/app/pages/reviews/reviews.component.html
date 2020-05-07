@@ -1,0 +1,10 @@
+<h3 style="
+   margin-left: 20px;
+   margin-bottom:50px;
+   color:darkred;
+   font-family: arial;
+" >Some of the recent Reviews</h3>
+
+<app-review *ngFor="let x of reviews"
+   [review]="x"></app-review>
+

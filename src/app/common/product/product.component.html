@@ -1,0 +1,49 @@
+
+    <!-- CARD  SECTION HTML -->
+
+    <div class="box">
+
+        <!-- ------------------1ST  book----------------------------- -->
+
+
+        <div class="card">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img src="http://localhost:8078/Bookshop/{{book.image}}" alt="Avatar" style="width:250px;height:250px;">
+                    </div>
+                    <div class="flip-card-back">
+                        <img src="http://localhost:8078/Bookshop/{{book.image}}" alt="Avatar" style="width:250px;height:250px;">
+                    </div>
+                </div>
+            </div>
+
+            <!-- ELEMENTS OR PRODUCT IN ONE DIV -->
+
+            <div class="container">
+
+
+                <!-- ELEMENT NAME (LIKE AS BOOK OR PRODUCT NAME) -->
+                <h3 class="font-space"> {{book.name}} </h3>
+
+
+                <!-- RUPPEES SECTION HTML CODE -->
+                <p class="font-space"> {{book.price | currency:"INR"}} </p>
+
+
+
+                <!-- STAR RATING RADIO BUTTON HTML CODE -->
+
+               
+                <div class="star" style="text-align:'center'">
+                    <span *ngFor="let x of [0,1,2,3,4] "
+                    [ngClass]="styles[x].starclass" [ngStyle]="styles[x].starstyle" ></span>
+                    
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
